@@ -48,32 +48,34 @@
 // - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані
 // відображається інфа що заплановано на цей день (можна замість плану на день, назву дня англійською).
 
-// let day = prompt('enter a number of the day of the week from 1 to 7');
-//
-// switch (day) {
-//     case '1':
-//         console.log('Monday - I have nothing to do');
-//         break;
-//     case '2':
-//         console.log('Tuesday - I have nothing to do');
-//         break;
-//     case '3':
-//         console.log('Wednesday - I have nothing to do');
-//         break;
-//     case '4':
-//         console.log('Thursday - I have nothing to do');
-//         break;
-//     case '5':
-//         console.log('Friday - I have nothing to do');
-//         break;
-//     case '6':
-//         console.log('Saturday - I have nothing to do');
-//         break;
-//     case '7':
-//         console.log('Sunday - Still I have nothing to do');
-//         break;
-// }
-//
+let day = prompt('enter a number of the day of the week from 1 to 7');
+
+switch (day) {
+    case '1':
+        console.log('Monday - I have nothing to do');
+        break;
+    case '2':
+        console.log('Tuesday - I have nothing to do');
+        break;
+    case '3':
+        console.log('Wednesday - I have nothing to do');
+        break;
+    case '4':
+        console.log('Thursday - I have nothing to do');
+        break;
+    case '5':
+        console.log('Friday - I have nothing to do');
+        break;
+    case '6':
+        console.log('Saturday - I have nothing to do');
+        break;
+    case '7':
+        console.log('Sunday - Still I have nothing to do');
+        break;
+    default:
+        console.log('error');
+}
+
 
 //     - Користувач вводить або має два числа.
 //         Потрібно знайти та вивести максимальне число з тих двох .
