@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.users-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    gap: 5px;
+    margin: 10px;
+
+}
+
+.user-block {
+    width: 480px;
+    border: 8px solid olivedrab;
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: rgba(238, 238, 44, 0.51);
+}
+
+.address-block {
+    text-align: end;
+    font-style: oblique;
+    padding-right: 35px;
+
+
+}
