@@ -117,11 +117,16 @@
 // console.log(numArr);
 
 // 8. вивести масив в зворотньому порядку.
-let numArr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
-for (let q = numArr.length - 1; q >= 0; q--) {
-    const numArrElement = numArr[q];
-    console.log(numArr);
+let numArray = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+
+let newNumArray = [];
+
+for (let q = numArray.length - 1, f = 0; q >= 0; q--, f++) {
+
+    newNumArray [f] = numArray[q];
+
 }
+console.log(newNumArray);
 
 
 // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
