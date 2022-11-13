@@ -128,8 +128,138 @@
 //
 // }
 // console.log(newNumArray);
+
+
+////9. всі попередні завдання (окрім 8), але в зворотньому циклі (ззаду наперед)
+//______________________________________________________________________________________________________________________
+
+// // 1 ) створити масив з:
+// // - з 5 числових значень
+// // - з 5 стічкових значень
+// // - з 5 значень стрічкового, числового та булевого типу
+// // - та вивести його в консоль
+
+// let arrNum = [];
 //
+// for (let i = 5; i >= 0; i--) {
+//     arrNum[i] = i;
+// }
 //
+// console.log(arrNum);
+
+
+// let arrString = [];
+// for (let i = 5; i >= 0; i--) {
+//     arrString[i] = `${i}`;
+//
+// }
+// console.log(arrString, typeof arrString[0]);
+//
+
+// let arrBooStrNum = [];
+// for (let i = 5; i >= 0; i--) {
+//     if (i >= 4 && i <= 5) {
+//         arrBooStrNum[i] = `${i}`
+//
+//     } else if (i >= 2 && i <= 3) {
+//         arrBooStrNum[i] = i;
+//     } else {
+//         arrBooStrNum[i] = i === 1   ;
+//     }
+//
+// }
+//
+// console.log(arrBooStrNum,
+//     typeof arrBooStrNum[0],
+//     typeof arrBooStrNum[1],
+//     typeof arrBooStrNum[2],
+//     typeof arrBooStrNum[3],
+//     typeof arrBooStrNum[4]
+// );
+//
+// // -- Створити пустий масив. Наповнити його будь-якими значеннями звертаючись до конкретного індексу.
+// Вивести в консоль
+// let users = [];
+//
+// for (let i = 6; i >= 0; i--) {
+//
+//     users[0] = 'a'
+//     users[1] = 'b'
+//     users[2] = 'c'
+//     users[3] = 'd'
+//     users[4] = 'e'
+//     users[5] = 'f'
+//
+// }
+//
+// console.log(users);
+//
+// // - є масив [2,17,13,6,22,31,45,66,100,-18] :
+// let numArr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+// 1. перебрати його циклом while
+
+// let i = numArr.length - 1;
+// while (i >= 0) {
+//
+//     console.log(numArr[i]);
+//
+//     i--;
+// }
+
+// // 3. перебрати циклом while та вивести  числа тільки з непарним індексом
+// console.log(numArr);
+// let j = numArr.length - 1;
+// while (j >= 0) {
+//     if (j % 2 !== 0) {
+//         console.log(numArr[j]);
+//     }
+//     j--
+// }
+// // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
+// console.log(numArr);
+// for (let k = numArr.length-1; k >=0 ; k--) {
+//
+//     if (k % 2 !== 0) {
+//         console.log(numArr[k])
+//     }
+// }
+
+// // 5. перебрати циклом while та вивести  числа тільки парні  значення
+// console.log(numArr);
+// let u = numArr.length - 1;
+// while (u >= 0) {
+//     if (numArr[u] % 2 === 0) {
+//         console.log(numArr[u]);
+//     }
+//     u--;
+// }
+// // 6. перебрати циклом for та вивести  числа тільки парні  значення
+// console.log(numArr);
+// for (let i = numArr.length - 1; i >= 0; i--) {
+//
+//     if (numArr[i] % 2 === 0) {
+//         console.log(numArr[i]);
+//     }
+//
+// }
+// // 7. замінити кожне число кратне 3 на слово "okten"
+// let numArr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+//
+// for (let g = numArr.length - 1; g >= 0; g--) {
+//     const numArrElement = numArr[g];
+//     if (numArrElement % 3 === 0) {
+//         console.log(numArrElement);
+//         numArr[g] = "okten";
+//     }
+// }
+// console.log(numArr);
+
+//_____________________________________________________________________________________________________________________
+
+
+
+
+
 // //- Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
 //
 // let numbers = [10, -20, 100, 0.5, 10500, 300, 400, 4, 8, 33];
