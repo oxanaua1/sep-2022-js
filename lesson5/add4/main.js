@@ -118,20 +118,15 @@
 // console.log(foo(20));
 
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
-//????????????????????????
+//
 // function foo(...array) {
 //
 //     let arrayReverse = [];
-//     for (let i = array.length - 1; i >= 0; i--) {
-//         for (let j = 0; j < arrayReverse.length; j++) {
+//     for (let i = array.length - 1, j=0; i >= 0; i--) {
 //
-//             array[length - 1] = arrayReverse [0];
-//         }
-//         console.log(array);
-//
+//              arrayReverse [j++] = array[i];
 //     }
 //     return  arrayReverse;
-//
 //
 // }
 //
@@ -141,11 +136,10 @@
 
 // - створити функцію, яка якщо приймає один аргумент, просто вивдоить його, якщо два аргументи - складає або
 // конкатенує їх між собою.
-//
-//
+
 // function foo() {
 //     if (arguments.length === 1) {
-//         console.log(arguments);
+//         console.log(arguments[0]);
 //     } else if (arguments.length === 2) {
 //         return arguments[0] + arguments[1];
 //     }
@@ -159,15 +153,101 @@
 // новий результуючий масив.
 //     EXAMPLE:
 // [1,2,3,4]
-//     [2,3,4,5]
+// [2,3,4,5]
 // результат
-//     [3,5,7,9]
+// [3,5,7,9]
+
 //
+// function foo(array1, array2) {
+//
+//     for (let i = 0, j = 0; i < array1.length; i++) {
+//
+//         if (i === j) {
+//             array2[j] += array1[i];
+//         }
+//         j++;
+//     }
+//     return array2;
+//
+// }
+// //
+// let newArray = foo([1, 2, 3, 4], [2, 3, 4, 5])
+//     console.log(newArray);
+
+///_якщо масиви різні________________________________________________________________
+//
+// let arr1 = [1, 2, 3, 4, 1, 1];
+// let arr2 = [2, 3, 4, 5, 3];
+// console.log(arr1);
+// console.log(arr2);
+// let arr3 = [1, 2, 3, 4];
+// let arr4 = [2, 3, 4, 5, 3];
+// console.log(arr3);
+// console.log(arr4);
+//
+//
+// function foo(array1, array2) {
+//
+//     let newArray = array1.length >= array2.length ? array1 : array2;
+//
+//     for (let i = 0; i < newArray.length; i++) {
+//
+//         newArray[i] = (array1[i] || 0) + (array2[i] || 0);
+//
+//     }
+//     return newArray;
+// }
+//
+//
+// console.log(foo(arr1, arr2));
+// console.log(foo(arr3, arr4));
+
 // - Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
 // EXAMPLE:
-//     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ name, age, model ]
+//     model ]
+// let arr = [
+//     {name: 'Dima', age: 13},
+//     {model: 'Camry'}
+// ];
 //
+// function foo(array) {
+//     let keyArray = [];
+//
+//     for (let i = 0, j = 0; i < array.length; i++) {
+//
+//         for (const key in array[i]) {
+//             keyArray[j] = key;
+//             j++;
+//         }
+//
+//     }
+//     return keyArray;
+// }
+//
+// console.log(foo(arr));
+
+
 //     - Створити функцію яка приймає масив будь яких объектів, та повертає масив значень всіх обєктів
 // EXAMPLE:
 //     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
+
+// let arr = [
+//     {name: 'Dima', age: 13},
+//     {model: 'Camry'}
+// ];
 //
+// function foo(array) {
+//     let valueArray = [];
+//
+//     for (let i = 0, j = 0; i < array.length; i++) {
+//
+//         for (const key in array[i]) {
+//             valueArray[j] = array[i][key];
+//             j++;
+//         }
+//
+//     }
+//     return valueArray;
+// }
+//
+// console.log(foo(arr));
