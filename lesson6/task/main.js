@@ -45,6 +45,9 @@
 // - Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
 //     let str = 'Ревуть воли як ясла повні';
 // let arr = stringToarray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
+
+
+
 // let str = 'Ревуть воли як ясла повні';
 //
 // const stringToArray = (str) => {
@@ -137,44 +140,44 @@
 //         value: '', // '6'-'10', 'ace','jack','queen','king','joker'
 //     color:'', // 'red','black'
 // }
-// let deck = [
-//     {cardSuit: 'Spade', value: '6', color: 'Black'},
-//     {cardSuit: 'Clubs', value: '6', color: 'Black'},
-//     {cardSuit: 'Hearts', value: '6', color: 'Red'},
-//     {cardSuit: 'Diamonds', value: '6', color: 'Red'},
-//     {cardSuit: 'Spade', value: '7', color: 'Black'},
-//     {cardSuit: 'Clubs', value: '7', color: 'Black'},
-//     {cardSuit: 'Hearts', value: '7', color: 'Red'},
-//     {cardSuit: 'Diamonds', value: '7', color: 'Red'},
-//     {cardSuit: 'Spade', value: '8', color: 'Black'},
-//     {cardSuit: 'Clubs', value: '8', color: 'Black'},
-//     {cardSuit: 'Hearts', value: '8', color: 'Red'},
-//     {cardSuit: 'Diamonds', value: '8', color: 'Red'},
-//     {cardSuit: 'Spade', value: '9', color: 'Black'},
-//     {cardSuit: 'Clubs', value: '9', color: 'Black'},
-//     {cardSuit: 'Hearts', value: '9', color: 'Red'},
-//     {cardSuit: 'Diamonds', value: '9', color: 'Red'},
-//     {cardSuit: 'Spade', value: '10', color: 'Black'},
-//     {cardSuit: 'Clubs', value: '10', color: 'Black'},
-//     {cardSuit: 'Hearts', value: '10', color: 'Red'},
-//     {cardSuit: 'Diamonds', value: '10', color: 'Red'},
-//     {cardSuit: 'Spade', value: 'Jack', color: 'Black'},
-//     {cardSuit: 'Clubs', value: 'Jack', color: 'Black'},
-//     {cardSuit: 'Hearts', value: 'Jack', color: 'Red'},
-//     {cardSuit: 'Diamonds', value: 'Jack', color: 'Red'},
-//     {cardSuit: 'Spade', value: 'Queen', color: 'Black'},
-//     {cardSuit: 'Clubs', value: 'Queen', color: 'Black'},
-//     {cardSuit: 'Hearts', value: 'Queen', color: 'Red'},
-//     {cardSuit: 'Diamonds', value: 'Queen', color: 'Red'},
-//     {cardSuit: 'Spade', value: 'King', color: 'Black'},
-//     {cardSuit: 'Clubs', value: 'King', color: 'Black'},
-//     {cardSuit: 'Hearts', value: 'King', color: 'Red'},
-//     {cardSuit: 'Diamonds', value: 'King', color: 'Red'},
-//     {cardSuit: 'Spade', value: 'Ace', color: 'Black'},
-//     {cardSuit: 'Clubs', value: 'Ace', color: 'Black'},
-//     {cardSuit: 'Hearts', value: 'Ace', color: 'Red'},
-//     {cardSuit: 'Diamonds', value: 'Ace', color: 'Red'}
-// ];
+let deck = [
+    {cardSuit: 'Spade', value: '6', color: 'Black'},
+    {cardSuit: 'Clubs', value: '6', color: 'Black'},
+    {cardSuit: 'Hearts', value: '6', color: 'Red'},
+    {cardSuit: 'Diamonds', value: '6', color: 'Red'},
+    {cardSuit: 'Spade', value: '7', color: 'Black'},
+    {cardSuit: 'Clubs', value: '7', color: 'Black'},
+    {cardSuit: 'Hearts', value: '7', color: 'Red'},
+    {cardSuit: 'Diamonds', value: '7', color: 'Red'},
+    {cardSuit: 'Spade', value: '8', color: 'Black'},
+    {cardSuit: 'Clubs', value: '8', color: 'Black'},
+    {cardSuit: 'Hearts', value: '8', color: 'Red'},
+    {cardSuit: 'Diamonds', value: '8', color: 'Red'},
+    {cardSuit: 'Spade', value: '9', color: 'Black'},
+    {cardSuit: 'Clubs', value: '9', color: 'Black'},
+    {cardSuit: 'Hearts', value: '9', color: 'Red'},
+    {cardSuit: 'Diamonds', value: '9', color: 'Red'},
+    {cardSuit: 'Spade', value: '10', color: 'Black'},
+    {cardSuit: 'Clubs', value: '10', color: 'Black'},
+    {cardSuit: 'Hearts', value: '10', color: 'Red'},
+    {cardSuit: 'Diamonds', value: '10', color: 'Red'},
+    {cardSuit: 'Spade', value: 'Jack', color: 'Black'},
+    {cardSuit: 'Clubs', value: 'Jack', color: 'Black'},
+    {cardSuit: 'Hearts', value: 'Jack', color: 'Red'},
+    {cardSuit: 'Diamonds', value: 'Jack', color: 'Red'},
+    {cardSuit: 'Spade', value: 'Queen', color: 'Black'},
+    {cardSuit: 'Clubs', value: 'Queen', color: 'Black'},
+    {cardSuit: 'Hearts', value: 'Queen', color: 'Red'},
+    {cardSuit: 'Diamonds', value: 'Queen', color: 'Red'},
+    {cardSuit: 'Spade', value: 'King', color: 'Black'},
+    {cardSuit: 'Clubs', value: 'King', color: 'Black'},
+    {cardSuit: 'Hearts', value: 'King', color: 'Red'},
+    {cardSuit: 'Diamonds', value: 'King', color: 'Red'},
+    {cardSuit: 'Spade', value: 'Ace', color: 'Black'},
+    {cardSuit: 'Clubs', value: 'Ace', color: 'Black'},
+    {cardSuit: 'Hearts', value: 'Ace', color: 'Red'},
+    {cardSuit: 'Diamonds', value: 'Ace', color: 'Red'}
+];
 
 
 // - знайти піковий туз
@@ -217,10 +220,10 @@
 // - всі трефи від 9 та більше
 
 
-// let filteredCardsSuitsClubsHigher9 = deck.filter((card) => {
-//     return card.cardSuit === 'Clubs' && card.value >= '9'
-// });
-// console.log(filteredCardsSuitsClubsHigher9);
+let filteredCardsSuitsClubsHigher9 = deck.filter((card) => {
+    return card.cardSuit === 'Clubs' && (card.value >= '9' || card.value ==='10')
+});
+console.log(filteredCardsSuitsClubsHigher9);
 
 
 // Додатково по reduce
@@ -233,67 +236,67 @@
 // }
 
 
-let deck = [
-    {cardSuit: 'Spade', value: '6', color: 'Black'},
-    {cardSuit: 'Clubs', value: '6', color: 'Black'},
-    {cardSuit: 'Hearts', value: '6', color: 'Red'},
-    {cardSuit: 'Diamonds', value: '6', color: 'Red'},
-    {cardSuit: 'Spade', value: '7', color: 'Black'},
-    {cardSuit: 'Clubs', value: '7', color: 'Black'},
-    {cardSuit: 'Hearts', value: '7', color: 'Red'},
-    {cardSuit: 'Diamonds', value: '7', color: 'Red'},
-    {cardSuit: 'Spade', value: '8', color: 'Black'},
-    {cardSuit: 'Clubs', value: '8', color: 'Black'},
-    {cardSuit: 'Hearts', value: '8', color: 'Red'},
-    {cardSuit: 'Diamonds', value: '8', color: 'Red'},
-    {cardSuit: 'Spade', value: '9', color: 'Black'},
-    {cardSuit: 'Clubs', value: '9', color: 'Black'},
-    {cardSuit: 'Hearts', value: '9', color: 'Red'},
-    {cardSuit: 'Diamonds', value: '9', color: 'Red'},
-    {cardSuit: 'Spade', value: '10', color: 'Black'},
-    {cardSuit: 'Clubs', value: '10', color: 'Black'},
-    {cardSuit: 'Hearts', value: '10', color: 'Red'},
-    {cardSuit: 'Diamonds', value: '10', color: 'Red'},
-    {cardSuit: 'Spade', value: 'Jack', color: 'Black'},
-    {cardSuit: 'Clubs', value: 'Jack', color: 'Black'},
-    {cardSuit: 'Hearts', value: 'Jack', color: 'Red'},
-    {cardSuit: 'Diamonds', value: 'Jack', color: 'Red'},
-    {cardSuit: 'Spade', value: 'Queen', color: 'Black'},
-    {cardSuit: 'Clubs', value: 'Queen', color: 'Black'},
-    {cardSuit: 'Hearts', value: 'Queen', color: 'Red'},
-    {cardSuit: 'Diamonds', value: 'Queen', color: 'Red'},
-    {cardSuit: 'Spade', value: 'King', color: 'Black'},
-    {cardSuit: 'Clubs', value: 'King', color: 'Black'},
-    {cardSuit: 'Hearts', value: 'King', color: 'Red'},
-    {cardSuit: 'Diamonds', value: 'King', color: 'Red'},
-    {cardSuit: 'Spade', value: 'Ace', color: 'Black'},
-    {cardSuit: 'Clubs', value: 'Ace', color: 'Black'},
-    {cardSuit: 'Hearts', value: 'Ace', color: 'Red'},
-    {cardSuit: 'Diamonds', value: 'Ace', color: 'Red'}
-];
-let reduceDeckCardSuit = deck.reduce((newDeck, deck) => {
-
-    if (deck.cardSuit === 'Spade') {
-        newDeck.spades.push(deck)
-
-    } else if (deck.cardSuit === 'Diamonds') {
-        newDeck.diamonds.push(deck)
-
-    } else if (deck.cardSuit === 'Hearts') {
-        newDeck.hearts.push(deck)
-
-    } else if (deck.cardSuit === 'Clubs') {
-        newDeck.clubs.push(deck)
-    }
-    return newDeck;
-
-}, {
-    spades: [],
-    diamonds: [],
-    hearts: [],
-    clubs: []
-});
-console.log(reduceDeckCardSuit);
+// let deck = [
+//     {cardSuit: 'Spade', value: '6', color: 'Black'},
+//     {cardSuit: 'Clubs', value: '6', color: 'Black'},
+//     {cardSuit: 'Hearts', value: '6', color: 'Red'},
+//     {cardSuit: 'Diamonds', value: '6', color: 'Red'},
+//     {cardSuit: 'Spade', value: '7', color: 'Black'},
+//     {cardSuit: 'Clubs', value: '7', color: 'Black'},
+//     {cardSuit: 'Hearts', value: '7', color: 'Red'},
+//     {cardSuit: 'Diamonds', value: '7', color: 'Red'},
+//     {cardSuit: 'Spade', value: '8', color: 'Black'},
+//     {cardSuit: 'Clubs', value: '8', color: 'Black'},
+//     {cardSuit: 'Hearts', value: '8', color: 'Red'},
+//     {cardSuit: 'Diamonds', value: '8', color: 'Red'},
+//     {cardSuit: 'Spade', value: '9', color: 'Black'},
+//     {cardSuit: 'Clubs', value: '9', color: 'Black'},
+//     {cardSuit: 'Hearts', value: '9', color: 'Red'},
+//     {cardSuit: 'Diamonds', value: '9', color: 'Red'},
+//     {cardSuit: 'Spade', value: '10', color: 'Black'},
+//     {cardSuit: 'Clubs', value: '10', color: 'Black'},
+//     {cardSuit: 'Hearts', value: '10', color: 'Red'},
+//     {cardSuit: 'Diamonds', value: '10', color: 'Red'},
+//     {cardSuit: 'Spade', value: 'Jack', color: 'Black'},
+//     {cardSuit: 'Clubs', value: 'Jack', color: 'Black'},
+//     {cardSuit: 'Hearts', value: 'Jack', color: 'Red'},
+//     {cardSuit: 'Diamonds', value: 'Jack', color: 'Red'},
+//     {cardSuit: 'Spade', value: 'Queen', color: 'Black'},
+//     {cardSuit: 'Clubs', value: 'Queen', color: 'Black'},
+//     {cardSuit: 'Hearts', value: 'Queen', color: 'Red'},
+//     {cardSuit: 'Diamonds', value: 'Queen', color: 'Red'},
+//     {cardSuit: 'Spade', value: 'King', color: 'Black'},
+//     {cardSuit: 'Clubs', value: 'King', color: 'Black'},
+//     {cardSuit: 'Hearts', value: 'King', color: 'Red'},
+//     {cardSuit: 'Diamonds', value: 'King', color: 'Red'},
+//     {cardSuit: 'Spade', value: 'Ace', color: 'Black'},
+//     {cardSuit: 'Clubs', value: 'Ace', color: 'Black'},
+//     {cardSuit: 'Hearts', value: 'Ace', color: 'Red'},
+//     {cardSuit: 'Diamonds', value: 'Ace', color: 'Red'}
+// ];
+// let reduceDeckCardSuit = deck.reduce((newDeck, deck) => {
+//
+//     if (deck.cardSuit === 'Spade') {
+//         newDeck.spades.push(deck)
+//
+//     } else if (deck.cardSuit === 'Diamonds') {
+//         newDeck.diamonds.push(deck)
+//
+//     } else if (deck.cardSuit === 'Hearts') {
+//         newDeck.hearts.push(deck)
+//
+//     } else if (deck.cardSuit === 'Clubs') {
+//         newDeck.clubs.push(deck)
+//     }
+//     return newDeck;
+//
+// }, {
+//     spades: [],
+//     diamonds: [],
+//     hearts: [],
+//     clubs: []
+// });
+// console.log(reduceDeckCardSuit);
 
 
 
