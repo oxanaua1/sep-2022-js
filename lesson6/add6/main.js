@@ -1,16 +1,16 @@
-//// - Напишите функцию cutString(str, n), которая делит строку на подстроки, состоящие из n символов.
-//// document.writeln(cutString('наслаждение',3)) // [нас,лаж,ден,ие]
+// - Напишите функцию cutString(str, n), которая делит строку на подстроки, состоящие из n символов.
+// document.writeln(cutString('наслаждение',3)) // [нас,лаж,ден,ие]
 
 // const cutString = (str, n) => {
 //
 //     let strNew = [];
-//
-//     for (let i = 0; i < str.length; i += n) {
-//         strNew.push(str.slice(0, n))
-//         str = str.slice(n)
+//     let i = 0;
+//     while (i < str.length) {
 //         strNew.push(str.slice(0, n))
 //         str = str.slice(n)
 //     }
+//     i += n;
+//
 //     return strNew
 // }
 // console.log(cutString('наслаждение', 3));
@@ -134,19 +134,7 @@
 // console.log(capitalize(str));
 
 
-// - Створити функцію-валідатор для адрес електронної пошти. Перевірка повинна включати в себе: данні до знака равлика(@), наявність равлика, крапку яка знаходиться не меньше ніж на 2 символ далі після равлика, функція не чутлива до регістру (some@email.com,SOME@EMAIL.COM,some@EMAIL.com, і тд - однакові значення)
-// Протестувати на значеннях
-// someemail@gmail.com
-// someeMAIL@gmail.com
-// someeMAIL@i.ua
-// some.email@gmail.com
-//
-// Примітка
-// Для тих, хто дуже розумний, та почне використовувати регулярні вирази одразу "ні". Своїм мозком подумайте над протоколом, з регулярками будете потім бавитись.
-//
-// 
-// 
-// 
+
 // - є масив
 // let coursesArray = [
 //     {
@@ -231,26 +219,146 @@
 
 
 //// - Напишіть функцію count(str, stringsearch), яка повертає кількість символів stringsearch у рядку str.
-let symb = "о", str = "Астрономия это наука о небесных объектах";
-// document.writeln(count(str, symb)) // 5
-const count = (str, symb) => {
-  return   str.repeat('o')
+////let symb = "о", str = "Астрономия это наука о небесных объектах";
+/// document.writeln(count(str, symb)) // 5
 
-}
-console.log(count(str, 'o'));
+// let str = "Астрономия это наука о небесных объектах";
+// const count = (str, symb) => {
+//
+//     if (str === undefined || symb === undefined) {
+//         return 0
+//     }
+//     str = str.toString();
+//     symb = symb.toString();
+//
+//     let count = 0;
+//     let p = str.indexOf(symb)
+//     while (p >= 1) {
+//         count++;
+//         p = str.indexOf(symb, p + 1);
+//
+//     }
+//     return count;
+// }
+// console.log(count(str, 'о'));
 
 
 // - Напишіть функцію cutString(str, n), яка видаляє зайві слова з рядка str, залишивши у ній n слів.
-//     let str = "Сила тяжести приложена к центру масс тела";
-// document.writeln(cutString(str, 5)) // 'Сила тяжести приложена к центру'
+// let str = "Сила тяжести приложена к центру масс тела";
+// document.writeln(cutString(str, 5))// 'Сила тяжести приложена к центру'
 //
+// const cutString = (str, n) => {
 //
+//     return str.split(' ').splice(0, n).toString().replaceAll(',', ' ')
+//
+// }
+//
+// console.log(cutString(str, 5));
+
+
 // -стоврити масив книжок (назва, кількість сторінок, автори , жанри).
-// -знайти наібльшу книжку.
+// let books = [
+//     {
+//         name: 'You are the only one',
+//         page: 500,
+//         genre: ['Romance', 'Detective'],
+//         author: [{name: 'Dan White'}]
+//     },
+//     {
+//         name: 'Another world',
+//         page: 600,
+//         genre: ['Romance', 'Detective', 'Fantasy'],
+//         author: [{name: 'Jack Black'}, {name: 'Dan White'}, {name: 'Keven Klone'}],
+//     },
+//     {
+//         name: 'Good night',
+//         page: 100,
+//         genre: ['Thriller'],
+//         author: [{name: 'Ivan Navi'}]
+//     },
+//     {
+//         name: 'At any time',
+//         page: 200,
+//         genre: ['Fantasy', 'Detective', 'Thriller', 'Fiction'],
+//         author: [{name: 'Ivan Navi'}, {name: 'Dan White'}]
+//     }
+//
+// ]
+
+//// -знайти наібльшу книжку.
+// function max(books) {
+//     let max = books[0];
+//     books.forEach(function (book) {
+//         if (book.page > max.page) {
+//             max = book;
+//         }
+//     });
+//     return max;
+// }
+// console.log(max(books));
+
+
 // - знайти книжку/ки з найбільшою кількістю жанрів
+
+// const maxGenreBook = (books) => {
+//     let max = books[0];
+//     books.forEach(function (book) {
+//         if (book.genre.length > max.genre.length) {
+//             max = book;
+//         }
+//     })
+//     return max
+//
+// }
+// console.log(maxGenreBook(books));
+
+
 // - знайти книжку/ки з найдовшою назвою
+
+// const maxNameBook = (books) => {
+//     let max = books[0];
+//     books.forEach((book) => {
+//         if (book.name.length > max.name.length) {
+//             max = book;
+//         }
+//     })
+//     return max
+//
+// }
+// console.log(maxNameBook(books));
 // - знайти книжку/ки які писали 2 автори
+
+//
+// const twoAuthorsBook = (books) => {
+//     let twoAuthBook = books[0];
+//     books.forEach((book) => {
+//         if (book.author.length === 2) {
+//             twoAuthBook = book
+//         }
+//     })
+//     return twoAuthBook;
+//
+// }
+// console.log(twoAuthorsBook(books));
 // - знайти книжку/ки які писав 1 автор
+
+//
+// const oneAuthorsBook = (books) => {
+//     let twoAuthBook = books[0];
+//     books.forEach((book) => {
+//         if (book.author.length === 1) {
+//             twoAuthBook = book
+//         }
+//     })
+//     return twoAuthBook;
+//
+// }
+// console.log(oneAuthorsBook(books));
+
+
 // - вісортувати книжки по кількості сторінок по зростанню
-//
-//
+// const sortBooks = (books) => {
+//     books.sort((a, b) => a.page - b.page);
+//     return books;
+// }
+// console.log(sortBooks(books));
