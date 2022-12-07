@@ -52,19 +52,19 @@
 //     }
 // }
 //
-// let Client1 = new Client(1, 'Ivan', 'Ivanov', 'ivanov@gmail.com', '0322456455', ['banana', 'apple', 'tomato']);
-// let Client2 = new Client(2, 'Petro', 'Petrenko', 'petrenko@gmail.com', '0322456466', ['orange', 'apple', 'tomato', 'potato']);
-// let Client3 = new Client(3, 'John', 'Johnson', 'johnon@gmail.com', '0322456477', ['milk', 'chocolate']);
-// let Client4 = new Client(4, 'Mike', 'Black', 'black@gmail.com', '0322456488', ['chocolate', 'milk', 'banana', 'orange', 'tomato']);
-// let Client5 = new Client(5, 'Derek', 'Rian', 'rian@gmail.com', '0322456499', ['banana', 'apple', 'tomato', 'potato']);
-// let Client6 = new Client(6, 'Kevin', 'Kos', 'kos@gmail.com', '0322456400', ['vodka', 'banana', 'apple', 'tomato', 'juice']);
-// let Client7 = new Client(7, 'Kolian', 'Kwin', 'kwin@gmail.com', '0322456412', ['tekila', 'tomato', 'banana', 'apple', 'milk', 'chocolate']);
-// let Client8 = new Client(8, 'Harry', 'Potter', 'potter@gmail.com', '0322456433', ['banana', 'apple', 'tomato']);
-// let Client9 = new Client(9, 'Anna', 'White', 'white@gmail.com', '0322456422', ['apple', 'banana', 'tomato', 'milk']);
-// let Client10 = new Client(10, 'Emma', 'Stone', 'stone@gmail.com', '0322456444', ['apple', 'tomato']);
+// let client1 = new Client(1, 'Ivan', 'Ivanov', 'ivanov@gmail.com', '0322456455', ['banana', 'apple', 'tomato']);
+// let client2 = new Client(2, 'Petro', 'Petrenko', 'petrenko@gmail.com', '0322456466', ['orange', 'apple', 'tomato', 'potato']);
+// let client3 = new Client(3, 'John', 'Johnson', 'johnon@gmail.com', '0322456477', ['milk', 'chocolate']);
+// let client4 = new Client(4, 'Mike', 'Black', 'black@gmail.com', '0322456488', ['chocolate', 'milk', 'banana', 'orange', 'tomato']);
+// let client5 = new Client(5, 'Derek', 'Rian', 'rian@gmail.com', '0322456499', ['banana', 'apple', 'tomato', 'potato']);
+// let client6 = new Client(6, 'Kevin', 'Kos', 'kos@gmail.com', '0322456400', ['vodka', 'banana', 'apple', 'tomato', 'juice']);
+// let client7 = new Client(7, 'Kolian', 'Kwin', 'kwin@gmail.com', '0322456412', ['tekila', 'tomato', 'banana', 'apple', 'milk', 'chocolate']);
+// let client8 = new Client(8, 'Harry', 'Potter', 'potter@gmail.com', '0322456433', ['banana', 'apple', 'tomato']);
+// let client9 = new Client(9, 'Anna', 'White', 'white@gmail.com', '0322456422', ['apple', 'banana', 'tomato', 'milk']);
+// let client10 = new Client(10, 'Emma', 'Stone', 'stone@gmail.com', '0322456444', ['apple', 'tomato']);
 //
 // let Clients = [];
-// Clients.push(Client1, Client2, Client3, Client4, Client5, Client6, Client7, Client8, Client9, Client10);
+// Clients.push(client1, client2, client3, client4, client5, client6, client7, client8, client9, client10);
 // console.log(Clients);
 
 
