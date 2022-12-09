@@ -287,16 +287,104 @@
 //     - Створити довільний елемент з id = text.  Використовуючи JavaScript, зробіть так, щоб при натисканні на кнопку
 //     зникав елемент з id="text".
 
-let div = document.createElement(div);
-div.classList.add('text');
+// let divText = document.createElement('div');
+// let button = document.createElement('button')
+//
+// divText.innerText = `Lorem ipsum dolor sit amet`;
+// button.innerText = `hide text`;
+//
+//
+// divText.setAttribute('id', 'text');
+//
+// document.body.append(divText, button);
+//
+// button.onclick = () => {
+//     if (divText.classList.toggle('hidden_text')) {
+//
+//         divText.removeAttribute('id', 'text');
+//         divText.style.display = 'none';
+//
+//     }
+// }
 
-document.body.appendChild(div);
 
 //______________________________________________________________________________________________________________________
 //     - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати
 //     інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
 //
+// let input = document.createElement('input');
+// let button = document.createElement('button');
+// let text = document.createElement('p')
+//
+// input.placeholder = ' pls enter your age ';
+// button.innerText = 'confirm';
+//
+// document.body.append(input, button, text);
+//
+// button.onclick = () => {
+//     input.oninput;
+//
+//     if (input.value > 0 && input.value <= 18) {
+//         console.log('less than 18');
+//         text.innerText = 'less than 18'
+//
+//     } else if (input.value >= 19) {
+//         console.log('more than 18');
+//         text.innerText = 'more than 18. you can enter';
+//     } else {
+//         console.log('enter your age more than 1 year');
+//         text.innerText = ('enter your age more than 1 year')
+//     }
+//
+//
+// }
+
+
 //______________________________________________________________________________________________________________________
 // *** Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додатковачастина для завдання)
+//
+// let inputLines = document.createElement('input');
+// let inputCell = document.createElement('input');
+// let inputContent = document.createElement('input');
+// let button = document.createElement('button');
+//
+// inputLines.placeholder = 'line';
+// inputCell.placeholder = 'cell';
+// inputContent.placeholder = 'content';
+// button.innerText = 'enter';
+//
+// button.onclick = () => {
+//
+//     let tr = inputLines.value;
+//     let td = inputCell.value;
+//     let content = inputContent.value;
+//
+//     function createTable(lines, cell, text) {
+//
+//         let table = document.createElement('table');
+//         table.style.border = `1px solid black`;
+//         document.body.append(table);
+//
+//         for (let i = 0; i < lines; i++) {
+//             let line = document.createElement('tr');
+//             table.append(line);
+//
+//             for (let j = 0; j < cell; j++) {
+//                 let cell = document.createElement('td');
+//                 cell.style.border = `1px dashed black`;
+//                 cell.innerText = `${text}`;
+//                 line.append(cell);
+//             }
+//
+//         }
+//
+//     }
+//
+//     createTable(tr, td, content);
+// }
+//
+//
+// document.body.append(inputLines, inputCell, inputContent, button);
+
