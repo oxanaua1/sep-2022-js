@@ -2,33 +2,39 @@ function userCard(number) {
 
     let balance = 100;
     let transactionLimit = 100;
-    let historyLogs = [{}];
+    let historyLogs = [];
     let key = number;
+
+    const createMessage = (operationType, credits) => ({operationType, credits, operationTime: Date()})
 
     return {
         getCardOptions: function (card) {
-            return card = {
-                balance, transactionLimit, historyLogs, key
-            }
+            return card = {balance, transactionLimit, historyLogs, key}
 
         },
 
-        putCredits: function (balance) {
-            return balance
-        },
-        takeCredits: function (addMoney) {
+        putCredits: function (money) {
 
-            if (balance - addMoney >= 0) {
-                return balance - addMoney;
+            historyLogs.push(createMessage('Received Credits', money))
+            return balance += money
+        },
+        takeCredits: function (money) {
+
+            if (balance - money >= 0) {
+                historyLogs.push(createMessage('Withdrawal of Credits', money))
+                return balance -= money;
+
             } else {
+                historyLogs.push(createMessage('No money at the account'))
                 throw new Error('No money at the account')
             }
 
         },
         setTransactionLimit: function (limit) {
+            historyLogs.push(createMessage('Transaction Limit changed', limit))
             return transactionLimit = limit;
         },
-        tranferCredits: function (moneyToTransfer, card) {
+        transferCredits: function (moneyToTransfer, card) {
             let limit = this.setTransactionLimit(transactionLimit);
             console.log(limit);
 
@@ -50,7 +56,8 @@ console.log(card3.getCardOptions());
 console.log(card3.putCredits(150));
 console.log(card3.takeCredits(100));
 console.log(card3.setTransactionLimit(5000));
-console.log(card3.tranferCredits(50, card1));
+console.log(card3.transferCredits(50, card1));
+
 
 
 
