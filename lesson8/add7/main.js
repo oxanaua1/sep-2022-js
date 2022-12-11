@@ -82,23 +82,22 @@
 //
 // }
 
-class Tag {
+// class Tag {
+//
+//
+//     constructor(titleOfTag, action, titleOfAttr, actionOfAttr, titleOfAttr1, actionOfAttr1) {
+//         this.titleOfTag = titleOfTag;
+//         this.action = action;
+//         this.attrs = [
+//             {titleOfAttr: actionOfAttr},
+//             {titleOfAttr1: actionOfAttr1}
+//         ];
+//     }
+// }
 
-
-    constructor(titleOfTag, action, titleOfAttr, actionOfAttr, titleOfAttr1, actionOfAttr1) {
-        this.titleOfTag = titleOfTag;
-        this.action = action;
-        this.attrs = [
-            {titleOfAttr: actionOfAttr},
-            {titleOfAttr1: actionOfAttr1}
-        ];
-    }
-}
-
-
-let aTag = new Tag('<a>',
-    'which is used to link from one page to another',
-    'download', 'Specifies that the target will be downloaded when a user clicks on the hyperlink',
-    'href', 'Specifies the URL of the page the link goes to');
-
-console.log(aTag);
+// let aTag = new Tag('<a>',
+//     'which is used to link from one page to another',
+//     'download', 'Specifies that the target will be downloaded when a user clicks on the hyperlink',
+//     'href', 'Specifies the URL of the page the link goes to');
+//
+// console.log(aTag);
