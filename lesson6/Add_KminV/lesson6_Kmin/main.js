@@ -341,20 +341,20 @@
 // console.log(filteredCarsByPowerMore250ProducerBMW);
 
 // - взять наступний массив
-const usersWithAddress = [
-    {id: 9, name: 'vasya', age: 31, isMarried: false, address: {city: 'Kyiv', street: 'Gongadze', number: 16}},
-    {id: 2, name: 'petya', age: 30, isMarried: true, address: {city: 'Rivne', street: 'Zelena', number: 1}},
-    {id: 4, name: 'kolya', age: 29, isMarried: true, address: {city: 'Lviv', street: 'Pasichna', number: 121}},
-    {id: 3, name: 'olya', age: 28, isMarried: false, address: {city: 'Rivne', street: 'Shevchenko', number: 90}},
-    {id: 8, name: 'max', age: 30, isMarried: true, address: {city: 'Lviv', street: 'Kriva Lipa', number: 115}},
-    {id: 6, name: 'anya', age: 31, isMarried: false, address: {city: 'Lviv', street: 'Shevchenko', number: 2}},
-    {id: 10, name: 'oleg', age: 28, isMarried: false, address: {city: 'Kyiv', street: 'Centralna', number: 22}},
-    {id: 5, name: 'andrey', age: 29, isMarried: true, address: {city: 'Lviv', street: 'Gorodotska', number: 43}},
-    {id: 1, name: 'masha', age: 30, isMarried: true, address: {city: 'Kyiv', street: 'Peremogi', number: 12}},
-    {id: 7, name: 'olya', age: 31, isMarried: false, address: {city: 'Lviv', street: 'Naukova', number: 16}},
-    {id: 11, name: 'max', age: 31, isMarried: true, address: {city: 'Rivne', street: 'Ivana Franka', number: 121}}
-];
-console.log(usersWithAddress);
+// const usersWithAddress = [
+//     {id: 9, name: 'vasya', age: 31, isMarried: false, address: {city: 'Kyiv', street: 'Gongadze', number: 16}},
+//     {id: 2, name: 'petya', age: 30, isMarried: true, address: {city: 'Rivne', street: 'Zelena', number: 1}},
+//     {id: 4, name: 'kolya', age: 29, isMarried: true, address: {city: 'Lviv', street: 'Pasichna', number: 121}},
+//     {id: 3, name: 'olya', age: 28, isMarried: false, address: {city: 'Rivne', street: 'Shevchenko', number: 90}},
+//     {id: 8, name: 'max', age: 30, isMarried: true, address: {city: 'Lviv', street: 'Kriva Lipa', number: 115}},
+//     {id: 6, name: 'anya', age: 31, isMarried: false, address: {city: 'Lviv', street: 'Shevchenko', number: 2}},
+//     {id: 10, name: 'oleg', age: 28, isMarried: false, address: {city: 'Kyiv', street: 'Centralna', number: 22}},
+//     {id: 5, name: 'andrey', age: 29, isMarried: true, address: {city: 'Lviv', street: 'Gorodotska', number: 43}},
+//     {id: 1, name: 'masha', age: 30, isMarried: true, address: {city: 'Kyiv', street: 'Peremogi', number: 12}},
+//     {id: 7, name: 'olya', age: 31, isMarried: false, address: {city: 'Lviv', street: 'Naukova', number: 16}},
+//     {id: 11, name: 'max', age: 31, isMarried: true, address: {city: 'Rivne', street: 'Ivana Franka', number: 121}}
+// ];
+// console.log(usersWithAddress);
 
 // -- Відсортувати їх по ID
 // let sortedById = usersWithAddress.sort((a, b) => a.id - b.id);
@@ -437,7 +437,7 @@ console.log(usersWithAddress);
 // Додатково
 // ______________________________________________________________________________________________________________________________________________________
 //
-// Створити обєкт автомобіля з полями:
+// Створити обєкт автомобіля з полями: ???????????????????????????????????????????????????
 //     Марка автомобля, потужність двигуна, власник, ціна, рік випуску.
 //     Власник автомобіля теж має бути обєкт, у якого є поля
 // Імя, вік, стаж водіння.
@@ -450,15 +450,42 @@ console.log(usersWithAddress);
 //     то необідно відправити його на курси підвищення кваліфікації, що збільшить йому досвід на 1 рік.
 //     Також спробуйте порахувати суму, яку потрібно потратити для покупки всіх цих авто в циклі
 //
-//
+//______________________________________________________________________________________________________________
 // Задача: дан отсортированный по возрастанию массив целых чисел.
 //     Необходимо вернуть наименьший и наибольший индекс заданного элемента.
-//     Входные данные: arr — массив целых чисел значения которых по модулю не больше 10. Размер массива не более 10 элементов.
-//     Вывод: наибольший и наименьший индекс в массиве заданного элемента. Если такого элемента нет в массиве, выведите -1.
+//     Входные данные: arr — массив целых чисел значения которых по модулю не больше 10.
+//     Размер массива не более 10 элементов.
+//     Вывод: наибольший и наименьший индекс в массиве заданного элемента.
+//     Если такого элемента нет в массиве, выведите -1.
 //
 // Пример:
-//     Arr = [1, 2, 3, 4, 4, 4, 4, 7, 7, 9, 14]
-// 1. Key = 1
-// Answer: MinIndex = 0, MaxIndex = 0.
-// 2. Key = 4
-// Answer: MinIndex = 3, MaxIndex = 6.
+// arr = [1, 2, 3, 4, 4, 4, 4, 7, 7, 9, 14]
+// // 1. Key = 1
+// // Answer: MinIndex = 0, MaxIndex = 0.
+// // 2. Key = 4
+// // Answer: MinIndex = 3, MaxIndex = 6.
+//
+//
+// const minMax = (arr, key) => {
+//     let min = 0;
+//     let max = 0;
+//     let res = -1;
+//     let newArr = [];
+//
+//     for (let i = 0; i < arr.length; i++) {
+//         if (key === arr[i]) {
+//             newArr.push(i)
+//         }
+//     }
+//     console.log(newArr);
+//
+//     min = newArr[0];
+//     max = newArr[newArr.length - 1];
+//
+//     if (min === undefined && max === undefined) {
+//         max = min = res;
+//     }
+//     console.log(min, max);
+// }
+//
+// minMax(arr, 15);
