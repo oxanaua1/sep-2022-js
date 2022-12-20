@@ -1,0 +1,90 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.containerUsers {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    padding: 10px;
+    background-color: lightblue;
+}
+
+.idName {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.linkBtn {
+
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 25px;
+    margin: 0 15px 15px 0;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #444;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+    cursor: pointer;
+}
+
+.userDetails {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: lightblue;
+}
+
+.userDetails div {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.btnPostOfUser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    box-sizing: border-box;
+    padding: 0 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 3px solid lightblue;
+    border-radius: 50px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #444;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+    cursor: pointer;
+}
+
+.wrapBtnPostOfUser {
+    display: flex;
+}
