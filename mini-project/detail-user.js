@@ -2,6 +2,7 @@ let url = new URL(location.href);
 const id = url.searchParams.get('user');
 
 let divWrapDetails = document.createElement('div');
+let divWrapPosts = document.createElement('div');
 let divUserDetails = document.createElement('div');
 let divBtn = document.createElement('div');
 let btnPostOfUser = document.createElement('button');
@@ -9,6 +10,7 @@ let btnPostOfUser = document.createElement('button');
 btnPostOfUser.innerText = 'post of current user';
 
 divWrapDetails.classList.add('wrapDetails');
+divWrapPosts.classList.add('wrapPosts')
 divUserDetails.classList.add('userDetails');
 divBtn.classList.add('wrapBtnPostOfUser');
 btnPostOfUser.classList.add('btnPostOfUser');
@@ -52,26 +54,30 @@ btnPostOfUser.onclick = () => {
             console.log(posts);
 
             posts.map(post => {
-                console.log(post);
+
                 let postId = post.id;
 
+                let divPostLinkWrap = document.createElement('div');
+                let divPosts = document.createElement('div');
                 let aLinkToPost = document.createElement('a');
-                aLinkToPost.innerText = 'details of post';
 
+                divPosts.innerText = `userId: ${post.userId}. Id: ${post.id}. Title: ${post.title}`;
+                aLinkToPost.innerText = ' * Post Details * ';
                 aLinkToPost.href = `post-details.html?post=` + JSON.stringify(post);
 
 
-                let divPosts = document.createElement('div');
-                divPosts.innerText = `userId: ${post.userId}. Id: ${post.id}. Title: ${post.title}`;
+                divPosts.classList.add('post');
+                aLinkToPost.classList.add('linkToPost');
+                divPostLinkWrap.classList.add('postLinkWrap');
 
-                document.body.append(divPosts, aLinkToPost);
+                divPostLinkWrap.append(divPosts, aLinkToPost);
+                divWrapPosts.append(divPostLinkWrap);
             })
-
 
         });
 }
 
 
 divBtn.append(btnPostOfUser);
-divWrapDetails.append(divUserDetails, divBtn);
+divWrapDetails.append(divUserDetails, divBtn, divWrapPosts);
 document.body.append(divWrapDetails);
