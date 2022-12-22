@@ -4,7 +4,6 @@ let post = url.searchParams.get('post');
 let postOfUser = JSON.parse(post);
 let id = postOfUser.id;
 
-
 let divPostCommentsContainer = document.createElement('div');
 let divPostContainer = document.createElement('div');
 let divPost = document.createElement('div');
@@ -14,7 +13,7 @@ let divCommentsContainer = document.createElement('div');
 divPost.innerText = `userId: ${postOfUser.userId}.Id: ${postOfUser.id}.---Title: ${postOfUser.title}.body: ${postOfUser.body}`;
 btnComments.innerText = 'show comments of the post';
 
-divPostCommentsContainer.classList.add('postCommentsContainer')
+divPostCommentsContainer.classList.add('postCommentsContainer');
 divPostContainer.classList.add('postContainer');
 divPost.classList.add('postDetails');
 btnComments.classList.add('btnComments');
@@ -30,21 +29,21 @@ btnComments.onclick = () => {
 
             comments.map(comment => {
                 let divCommentsWrap = document.createElement('div');
-                let h3Comment = document.createElement('h3');
+                let h5Comment = document.createElement('h5');
                 let divComment = document.createElement('div');
 
-                h3Comment.innerText = `postId: ${comment.postId}. Id: ${comment.id}.Email: ${comment.email}`
+                h5Comment.innerText = `postId: ${comment.postId}. Id: ${comment.id}.Email: ${comment.email}`
                 divComment.innerText = `Name: ${comment.name}`;
 
                 divCommentsWrap.classList.add('commentsWrap')
 
-                divCommentsWrap.append(h3Comment, divComment);
+                divCommentsWrap.append(h5Comment, divComment);
                 divCommentsContainer.append(divCommentsWrap);
             })
 
 
         });
-}
+};
 
 
 divPostContainer.append(divPost, btnComments);

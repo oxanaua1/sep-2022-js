@@ -10,7 +10,7 @@ let btnPostOfUser = document.createElement('button');
 btnPostOfUser.innerText = 'post of current user';
 
 divWrapDetails.classList.add('wrapDetails');
-divWrapPosts.classList.add('wrapPosts')
+divWrapPosts.classList.add('wrapPosts');
 divUserDetails.classList.add('userDetails');
 divBtn.classList.add('wrapBtnPostOfUser');
 btnPostOfUser.classList.add('btnPostOfUser');
@@ -72,10 +72,11 @@ btnPostOfUser.onclick = () => {
 
                 divPostLinkWrap.append(divPosts, aLinkToPost);
                 divWrapPosts.append(divPostLinkWrap);
+
             })
 
         });
-}
+};
 
 
 divBtn.append(btnPostOfUser);

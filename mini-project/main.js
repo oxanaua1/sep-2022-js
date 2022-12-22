@@ -1,6 +1,6 @@
 let divContainer = document.createElement('div');
 
-divContainer.classList.add('containerUsers')
+divContainer.classList.add('containerUsers');
 
 fetch('https://jsonplaceholder.typicode.com/users')
     .then(value => value.json())
@@ -21,11 +21,10 @@ fetch('https://jsonplaceholder.typicode.com/users')
             aLink.classList.add('linkBtn');
 
             divWrapper.append(h3IdName, aLink);
-            divContainer.appendChild(divWrapper)
+            divContainer.appendChild(divWrapper);
 
         }
 
     });
-
 
 document.body.appendChild(divContainer);
