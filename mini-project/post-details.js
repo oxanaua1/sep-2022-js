@@ -40,7 +40,7 @@ btnComments.onclick = () => {
                 divCommentsWrap.append(h5Comment, divComment);
                 divCommentsContainer.append(divCommentsWrap);
             })
-
+            btnComments.disabled = true;
 
         });
 };

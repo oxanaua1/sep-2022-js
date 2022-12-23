@@ -74,6 +74,7 @@ btnPostOfUser.onclick = () => {
                 divWrapPosts.append(divPostLinkWrap);
 
             })
+            btnPostOfUser.disabled = true;
 
         });
 };
