@@ -6,7 +6,7 @@ linkToHomePage.href = `./index.html`;
 
 
 const favoriteKey = 'favorites';
-let users = JSON.parse(localStorage.getItem(favoriteKey)) || [];
+let users = JSON.parse(localStorage.getItem('favorite')) || [];
 console.log(users);
 
 for (const user of users) {
