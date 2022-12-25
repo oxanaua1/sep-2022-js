@@ -4,8 +4,6 @@ const linkToHomePage = document.createElement('a');
 linkToHomePage.innerText = `Go to Home Page`;
 linkToHomePage.href = `./index.html`;
 
-
-const favoriteKey = 'favorites';
 let users = JSON.parse(localStorage.getItem('favorite')) || [];
 console.log(users);
 
