@@ -169,34 +169,112 @@
 //
 // document.body.append(btn);
 //______________________________________________________________________________________________________________________
+// ???Доробити
 // - Описати скріпт, котрий, якщо доєднати до будь-якої сторінки дозволить зробити наступне:
 //     При лівому кліку миші вивести в консоль інформацію про блок або елемент на який відбувся клік.
 //     Інформація яку потрібно вивести: Назва тегу, список класів, список ід, розміри в форматі висота*ширина
+
+// function inspect(htmlElement) {
+//     console.log(htmlElement.children);
+//
+//     htmlElement.onclick = (e) => {
+//         let tagName = e.target;
+//         let classListName = e.target.classList[0];
+//         let idName = e.target.id;
+//         let widthName = e.target.width;
+//         let heightName = e.target.height;
+//
+//         console.log(tagName, 'tagName');
+//         console.log(classListName, 'classListName');
+//         console.log(idName, 'idName');
+//         console.log(widthName, '- width', heightName, '- height');
+//
+//
+//     }
+// }
+//
+// inspect(document.body);
+//
+
 //______________________________________________________________________________________________________________________
 // - Описати скріпт, котрий, якщо доєднати до будь-якої сторінки дозволить зробити наступне:
 //     При лівому кліку миші  зробить popup (спливаючий блок) в якому буде вся інформація про блок.
-//     Інформація яку потрібно вивести в popup: Назва тегу, список класів, список ід, розміри в форматі висота*ширина
+//     Інформація яку потрібно вивести в popup: Назва тегу, список класів, список ід,
+//     розміри в форматі висота*ширина
 //______________________________________________________________________________________________________________________
 // -- взять массив пользователей
-// let usersWithAddress = [
-//     {id:1,name: 'vasya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
-//     {id:2,name: 'petya', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 1}},
-//     {id:3,name: 'kolya', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 121}},
-//     {id:4,name: 'olya', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 90}},
-//     {id:5,name: 'max', age: 30, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 115}},
-//     {id:6,name: 'anya', age: 31, status: false, address: {city: 'Kyiv', street: 'Shevchenko', number: 2}},
-//     {id:7,name: 'oleg', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 22}},
-//     {id:8,name: 'andrey', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 43}},
-//     {id:9,name: 'masha', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 12}},
-//     {id:10,name: 'olya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
-//     {id:11,name: 'max', age: 31, status: true, address: {city: 'Ternopil', street: 'Shevchenko', number: 121}}
-// ];
-// - Создать три чекбокса. Каждый из них активирует фильтр для вышеуказаного массива. Фильтры могут работать как вместе
-// так и по отдельности.
+let usersWithAddress = [
+    {id: 1, name: 'vasya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
+    {id: 2, name: 'petya', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 1}},
+    {id: 3, name: 'kolya', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 121}},
+    {id: 4, name: 'olya', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 90}},
+    {id: 5, name: 'max', age: 30, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 115}},
+    {id: 6, name: 'anya', age: 31, status: false, address: {city: 'Kyiv', street: 'Shevchenko', number: 2}},
+    {id: 7, name: 'oleg', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 22}},
+    {id: 8, name: 'andrey', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 43}},
+    {id: 9, name: 'masha', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 12}},
+    {id: 10, name: 'olya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
+    {id: 11, name: 'max', age: 31, status: true, address: {city: 'Ternopil', street: 'Shevchenko', number: 121}}
+];
+// - Создать три чекбокса. Каждый из них активирует фильтр для вышеуказаного массива.
+// Фильтры могут работать как вместе  так и по отдельности.
 // 1й - отфильтровывает пользователей со статусом false (осталяет со статусом false)
 // 2й - оставляет старше 29 лет включительно
 // 3й - оставляет тех у кого город киев
 // Данные выводить в документ
+
+// function check() {
+//     const hr1 = document.createElement('hr');
+//     const hr2 = document.createElement('hr');
+//     const hr3 = document.createElement('hr');
+//
+//     const status = document.getElementById('status');
+//     const age = document.getElementById('age');
+//     const city = document.getElementById('city');
+//
+//
+//     status.onclick = () => {
+//         if (status.checked) {
+//             usersWithAddress.map(value => {
+//                 if (value.status === false) {
+//                     console.log(value);
+//                     document.body.append(JSON.stringify(value))
+//                 }
+//
+//             })
+//         }
+//         document.body.append(hr1);
+//     }
+//
+//     age.onclick = () => {
+//         if (age.checked) {
+//             usersWithAddress.map(value => {
+//                 if (value.age >= 29) {
+//                     console.log(value);
+//                     document.body.append(JSON.stringify(value))
+//                 }
+//
+//             })
+//         }
+//         document.body.append(hr2);
+//     }
+//     city.onclick = () => {
+//         if (city.checked) {
+//             usersWithAddress.map(value => {
+//                 if (value.address.city === 'Kyiv') {
+//                     console.log(value);
+//                     document.body.append(JSON.stringify(value))
+//                 }
+//
+//             })
+//         }
+//         document.body.append(hr3);
+//     }
+//
+//
+// }
+
+// check();
 //______________________________________________________________________________________________________________________
 // *****(Прям овердоз с рекурсией) Создать функцию которая принимает какой-либо элемент DOM-структуры .Функция создает
 // в боди 2 кнопки (назад/вперед)
@@ -206,8 +284,8 @@
 // выводит первого ребенка. и тд.
 //     Когда все дети заканчиваются, мы выходим из данного дочернего элемента и переходим к следующему, лежащему с ним
 //     на одном уровне
-//
+//______________________________________________________________________________________________________________________
 // - Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на стрелочки.
-//
+//______________________________________________________________________________________________________________________
 //     Завдання важке для розуміння, але дуже легке в реалізації. Тут треба буде погуглити
 // *** При виділені сегменту тексту на сторінці він стає жирний/курсивний/або якось іншим способом змінює свій стан
